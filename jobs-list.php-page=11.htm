@@ -1,0 +1,654 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>职位列表  - 乐清人才网</title>
+<meta name="description" content="乐清人才网招聘岗位">
+<meta name="keywords" content="乐清人才网,职位信息">
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<link rel="shortcut icon" href="favicon.ico" tppabs="http://h.qiqianke.com/favicon.ico" />
+<link href="common.css" tppabs="http://h.qiqianke.com/templates/default/css/common.css" rel="stylesheet" type="text/css" />
+<link href="jobs.css" tppabs="http://h.qiqianke.com/templates/default/css/jobs.css" rel="stylesheet" type="text/css" />
+<script src="jquery.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.js" type='text/javascript' ></script>
+<script src="jquery.dialog.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.dialog.js" type='text/javascript' ></script>
+<script src="jquery.highlight-3.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.highlight-3.js" type='text/javascript' ></script>
+<script src="jquery.vtip-min.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.vtip-min.js" type='text/javascript' ></script>
+<script src="jquery.jobs-list.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.jobs-list.js" type='text/javascript' ></script>
+<script src="cache_classify.js" tppabs="http://h.qiqianke.com/data/cache_classify.js" type='text/javascript' charset="utf-8"></script>
+<script type="text/javascript"> 
+$(document).ready(function()
+{
+	jobslist();
+	jobscontrast("jobs-contrast.php.htm"/*tpa=http://h.qiqianke.com/jobs/jobs-contrast.php*/);
+	apply_jobs("/");
+	favorites("/");
+	recommend_jobs("/");
+});
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1e25c4bd01650b2dcd316c0489047eb7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+
+<div align="center">
+<script type="text/javascript">
+    /*960*90 鍒涘缓浜?2014-08-05*/
+    var cpro_id = "u1645416";
+</script>
+<script src="c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+
+<div class="head_top">
+
+	<div class="head_top_box">
+
+			<div class="head_top_box_left link_lan"><span id="top_loginform"></span></div>
+
+			<div class="head_top_box_right link_bk">
+
+			
+<div class="lia t_so" id="t_so">
+
+搜索
+
+<div class="op_search" id="op_search"> 
+
+	<div class="stit" ><div>搜索</div></div>
+
+	<div class="sform">
+
+	<form action="" method="get" name="topsearch">
+
+	  <input name="key" type="text"  class="key"/>
+
+	  <div class="sutleft">
+
+	  <input type="button" value="搜职位" class="but70"  id="/jobs/jobs-list.php"/>
+
+	  </div>
+
+	  <div class="sutright">
+
+	  <input type="button" value="搜简历" class="but70" id="/resume/resume-list.php"/>
+
+	   </div>	   
+
+	   <div class="clear"></div>
+
+	   </form>
+
+	</div>
+
+</div>
+
+</div>
+
+<a href="index-1.htm" tppabs="http://h.qiqianke.com/wap/"  class="lia t_m">手机频道</a>
+
+
+<a href="index.htm" tppabs="http://h.qiqianke.com/" class="lia">网站首页</a>
+
+<a href="javascript:if(confirm(%27http://h.qiqianke.com/plus/shortcut.php  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a path excluded by the site\%27s Robot Exclusion parameters.  (Teleport Ultra\%27s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/plus/shortcut.php%27" tppabs="http://h.qiqianke.com/plus/shortcut.php" style="color:#FF3300" class="lia">保存到桌面</a>
+
+<script type="text/javascript">
+
+//顶部部登录
+
+$.get("http://h.qiqianke.com/plus/ajax_user.php", {"act":"top_loginform"},
+
+function (data,textStatus)
+
+{			
+
+$("#top_loginform").html(data);
+
+}
+
+);
+
+//
+
+$("#t_so").hover(
+
+function(){
+
+$("#t_so").css("position","relative");
+
+$("#op_search").show();
+
+},
+
+function(){
+
+$("#op_search").hide();
+
+$("#t_so").css("position","");	
+
+}
+
+);
+
+$("form[name=topsearch] .but70").click(function(){
+
+$("form[name=topsearch]").attr("action",$(this).attr("id"));
+
+$("form[name=topsearch]").submit();
+
+});
+
+</script>
+			</div>
+
+			<div class="clear"></div>
+
+	</div>
+
+</div>
+
+<div class="head">
+
+	<div class="head_logo">
+
+		<a href="index.htm" tppabs="http://h.qiqianke.com/"><img src="logo.jpg" tppabs="http://h.qiqianke.com/data/images/logo.jpg" alt="乐清人才网" border="0" align="absmiddle" /></a>
+
+		
+	</div>
+
+	<div class="head_logo_right">
+
+			
+			
+	</div>
+
+	<div class="clear"></div>
+
+</div><div class="page_location link_bk">
+当前位置：<a href="index.htm" tppabs="http://h.qiqianke.com/">首页</a>&nbsp;>>&nbsp;<a href="index-2.htm" tppabs="http://h.qiqianke.com/jobs/">招聘信息</a>&nbsp;>>&nbsp;搜索结果
+</div>
+<div class="jobs-nav" id="typenav">
+  <a href="jobs-list.php.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php" class="select">全能搜索</a>
+  <a href="officebuilding-search.php.htm" tppabs="http://h.qiqianke.com/jobs/officebuilding-search.php" >按写字楼搜索</a>
+  <a href="street-search.php.htm" tppabs="http://h.qiqianke.com/jobs/street-search.php">按道路搜索</a>
+  <a href="jobtag-search.php.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php" >按标签搜索</a>
+  <div class="clear"></div>
+</div>
+<div class="jobsearchbox" id="jobsearchbox"><div class="loading"></div></div>
+<script src="jquery.jobs-search.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.jobs-search.js" type='text/javascript'></script>
+<script type="text/javascript">
+	var getstr=",,,,,,,,,";
+	var getkey="请输入职位名称、公司名称、技能特长、学校等关键字...";
+	allaround('/templates/default/','/','jobs-list.php.htm'/*tpa=http://h.qiqianke.com/jobs/jobs-list.php*/,getkey,getstr);
+</script>
+<div class="jobs_list_tip link_greenu" id="jobs_list_tip">
+<ul>
+<li>提醒：凡需先交纳押金、保证金、体检费、材料费、成本费等费用或到指定医院体检等，可能是骗子信息，谨防上当受骗。</li>
+<li>提醒：您知道吗？公司招聘时都会搜索简历库，<a href="javascript:if(confirm(%27http://h.qiqianke.com/user/personal/personal_resume.php?act=resume_list  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a path excluded by the site\%27s Robot Exclusion parameters.  (Teleport Ultra\%27s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/user/personal/personal_resume.php?act=resume_list%27" tppabs="http://h.qiqianke.com/user/personal/personal_resume.php?act=resume_list" target="_blank">免费发布简历</a>，获取更多机会！</li>
+</ul>
+</div>
+<!--职位列表 -->
+<div class="jobs_list">
+  <form action="" method="post"  name="formjobslist" id="formjobslist"  target="_blank">
+    <div class="tit">
+	 			<label><input name="selectall" type="checkbox" value="" id="selectall"/>&nbsp;全选</label>
+	  			<div class="titsub deliver" >投递简历</div>
+				<div class="titsub collect" >收藏职位</div>
+				<div class="titsub contrast" >对比职位</div> 
+				<div class="pageminnav link_lan"><span>11/55页</span><a  href="jobs-list.php-page=10.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=10"><</a><a  href="jobs-list.php-page=12.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=12">下一页</a><div class="clear"></div></div>
+	 			<div class="clear"></div>
+	</div>	
+	<div class="sort">
+		  <div class="txt link_bk">
+		  <span>排序：</span>
+		  		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=stickrtime&key=  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=stickrtime&key=%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=stickrtime&key=" class="select">默认</a>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=rtime&key=  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=rtime&key=%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=rtime&key=" >更新时间</a>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=hot&key=  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=hot&key=%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=hot&key=" >热度</a>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=wage&key=  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=wage&key=%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=wage&key=" >工资</a>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=scale&key=  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=scale&key=%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=1&sort=scale&key=" >公司规模</a>
+		  		  <div class="pagerow"><span>每页显示：</span>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&inforow=10&key=  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&inforow=10&key=%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=1&inforow=10&key="  class="select">10</a>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&inforow=20&key=  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&inforow=20&key=%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=1&inforow=20&key=" >20</a>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&inforow=30&key=  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=1&inforow=30&key=%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=1&inforow=30&key=" >30</a>
+		  </div>
+		  </div>
+	</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="603"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=603  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=603%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=603" target="_blank">急聘全民兼职300/天</a>
+																																			</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=425  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=425%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=425" target="_blank">急聘全民兼职300/天</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">5000~10000元/月</div>
+							
+							<div class="date">						
+							2017-02-19
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=0">乐清市</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：若干人   | 点击：13次</p>
+							<p style="color: #999999" class="striking">急聘在家刷单轻松全兼职扣扣:20 65 97 168
+有意者请加在线客服Q:20 65 97 168  大写腾讯企鹅号：（二零 六五 九七  一六八 ） 咨询小洁
+     职位要求: 
+绝无拖欠工资！ 操作简单易懂，只要你在网购购过物的朋友都能轻易学会，并且熟练操作，想兼职，又不想影响正职朋友。有开通支付宝．网...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=1&subclass=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=1&subclass=0">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="603">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="603">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D603|急聘全民兼职300/天'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="603"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="604"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=604  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=604%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=604" target="_blank">急聘全民兼职300/天</a>
+																																			</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=425  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=425%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=425" target="_blank">急聘全民兼职300/天</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">5000~10000元/月</div>
+							
+							<div class="date">						
+							2017-02-19
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=0">乐清市</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：若干人   | 点击：7次</p>
+							<p style="color: #999999" class="striking">急聘在家刷单轻松全兼职扣扣:20 65 97 168
+有意者请加在线客服Q:20 65 97 168  大写腾讯企鹅号：（二零 六五 九七  一六八 ） 咨询小洁
+     职位要求: 
+绝无拖欠工资！ 操作简单易懂，只要你在网购购过物的朋友都能轻易学会，并且熟练操作，想兼职，又不想影响正职朋友。有开通支付宝．网...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=1&subclass=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=1&subclass=0">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="604">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="604">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D604|急聘全民兼职300/天'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="604"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="469"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=469  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=469%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=469" target="_blank">不用坐班的兼职月薪7000元</a>
+																																			</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=317  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=317%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=317" target="_blank">阿良商务公司</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-02-16
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：15次</p>
+							<p style="color: #999999" class="striking">TIENS阿良职业要求：
+1、上网条件–兼 职/专职均可 (必须有智能手机、平板电脑或者电脑必备上网条件)
+2、时间安排–平均每天能有２－４小时上网时间即可（时间段不限具体由自己安排）
+3、工资结算–月薪7000元，工资每月15号银行卡结算，业绩积累，收入直线上升，多劳多得。
+4、适合不愿...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="469">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="469">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D469|不用坐班的兼职月薪7000元'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="469"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="470"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=470  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=470%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=470" target="_blank">不用坐班的兼职月薪7000元</a>
+																																			</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=317  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=317%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=317" target="_blank">阿良商务公司</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-02-16
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：29次</p>
+							<p style="color: #999999" class="striking">TIENS阿良职业要求：
+1、上网条件–兼 职/专职均可 (必须有智能手机、平板电脑或者电脑必备上网条件)
+2、时间安排–平均每天能有２－４小时上网时间即可（时间段不限具体由自己安排）
+3、工资结算–月薪7000元，工资每月15号银行卡结算，业绩积累，收入直线上升，多劳多得。
+4、适合不愿...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="470">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="470">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D470|不用坐班的兼职月薪7000元'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="470"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="471"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=471  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=471%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=471" target="_blank">不用坐班的兼职月薪7000元</a>
+																																			</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=317  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=317%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=317" target="_blank">阿良商务公司</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-02-16
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：21次</p>
+							<p style="color: #999999" class="striking">TIENS阿良职业要求：
+1、上网条件–兼 职/专职均可 (必须有智能手机、平板电脑或者电脑必备上网条件)
+2、时间安排–平均每天能有２－４小时上网时间即可（时间段不限具体由自己安排）
+3、工资结算–月薪7000元，工资每月15号银行卡结算，业绩积累，收入直线上升，多劳多得。
+4、适合不愿...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="471">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="471">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D471|不用坐班的兼职月薪7000元'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="471"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="472"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=472  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=472%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=472" target="_blank">不用坐班的兼职月薪7000元</a>
+																																			</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=317  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=317%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=317" target="_blank">阿良商务公司</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-02-16
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：15次</p>
+							<p style="color: #999999" class="striking">TIENS阿良职业要求：
+1、上网条件–兼 职/专职均可 (必须有智能手机、平板电脑或者电脑必备上网条件)
+2、时间安排–平均每天能有２－４小时上网时间即可（时间段不限具体由自己安排）
+3、工资结算–月薪7000元，工资每月15号银行卡结算，业绩积累，收入直线上升，多劳多得。
+4、适合不愿...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="472">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="472">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D472|不用坐班的兼职月薪7000元'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="472"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="671"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=671  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=671%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=671" target="_blank">急聘刷客兼职300/天</a>
+																																			</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=470  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=470%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=470" target="_blank">天天刷招聘兼职中心2</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">5000~10000元/月</div>
+							
+							<div class="date">						
+							2017-02-13
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=0">乐清市</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：50人   | 点击：21次</p>
+							<p style="color: #999999" class="striking">申请职位,加腾讯在线客服( 周小姐 )Ｑ Ｑ：27 95 78 456（备注：应聘）
+1.有上网条件，智能手机或电脑，即可工作。
+2.应聘者具备条件：网银，支付宝，信用卡，（用来结算工资）。
+3.工作地点：全国各地，在家，公司，单位，网吧等地均可。
+4.报酬发放：多做多得,工资现结，概不拖欠，每天...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=1&subclass=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=1&subclass=0">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="671">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="671">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D671|急聘刷客兼职300/天'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="671"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="668"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=668  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=668%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=668" target="_blank">急聘刷客兼职300/天</a>
+																												 <img src="69.gif" tppabs="http://h.qiqianke.com/templates/default/images/69.gif" border="0" align="absmiddle" title="欢迎应届生投递简历" class="vtip"/>							</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=469  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=469%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=469" target="_blank">天天刷招聘兼职中心1</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">5000~10000元/月</div>
+							
+							<div class="date">						
+							2017-02-13
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=0">乐清市</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：50人   | 点击：7次</p>
+							<p style="color: #999999" class="striking">申请职位,加腾讯在线客服( 周小姐 )Ｑ Ｑ：27 95 78 456（备注：应聘）
+1.有上网条件，智能手机或电脑，即可工作。
+2.应聘者具备条件：网银，支付宝，信用卡，（用来结算工资）。
+3.工作地点：全国各地，在家，公司，单位，网吧等地均可。
+4.报酬发放：多做多得,工资现结，概不拖欠，每天...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=1&subclass=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=1&subclass=0">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="668">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="668">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D668|急聘刷客兼职300/天'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="668"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="669"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=669  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=669%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=669" target="_blank">急聘刷客兼职300/天</a>
+																												 <img src="69.gif" tppabs="http://h.qiqianke.com/templates/default/images/69.gif" border="0" align="absmiddle" title="欢迎应届生投递简历" class="vtip"/>							</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=469  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=469%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=469" target="_blank">天天刷招聘兼职中心1</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">5000~10000元/月</div>
+							
+							<div class="date">						
+							2017-02-13
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=0">乐清市</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：50人   | 点击：6次</p>
+							<p style="color: #999999" class="striking">申请职位,加腾讯在线客服( 周小姐 )Ｑ Ｑ：27 95 78 456（备注：应聘）
+1.有上网条件，智能手机或电脑，即可工作。
+2.应聘者具备条件：网银，支付宝，信用卡，（用来结算工资）。
+3.工作地点：全国各地，在家，公司，单位，网吧等地均可。
+4.报酬发放：多做多得,工资现结，概不拖欠，每天...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=1&subclass=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=1&subclass=0">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="669">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="669">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D669|急聘刷客兼职300/天'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="669"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="670"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-show.php?id=670  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-show.php?id=670%27" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=670" target="_blank">急聘刷客兼职300/天</a>
+																												 <img src="69.gif" tppabs="http://h.qiqianke.com/templates/default/images/69.gif" border="0" align="absmiddle" title="欢迎应届生投递简历" class="vtip"/>							</div>
+							<div class="com striking">
+							<a href="javascript:if(confirm(%27http://h.qiqianke.com/company/company-show.php?id=469  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/company/company-show.php?id=469%27" tppabs="http://h.qiqianke.com/company/company-show.php?id=469" target="_blank">天天刷招聘兼职中心1</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">5000~10000元/月</div>
+							
+							<div class="date">						
+							2017-02-13
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=0">乐清市</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：50人   | 点击：7次</p>
+							<p style="color: #999999" class="striking">申请职位,加腾讯在线客服( 周小姐 )Ｑ Ｑ：27 95 78 456（备注：应聘）
+1.有上网条件，智能手机或电脑，即可工作。
+2.应聘者具备条件：网银，支付宝，信用卡，（用来结算工资）。
+3.工作地点：全国各地，在家，公司，单位，网吧等地均可。
+4.报酬发放：多做多得,工资现结，概不拖欠，每天...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=1&subclass=0.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=1&subclass=0">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="670">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="670">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D670|急聘刷客兼职300/天'>[推荐给好友]</a></div>
+							  <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="670"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		    <div class="tit" style="border-top:0px;">
+	 <label> <input name="selectall" type="checkbox" value="" id="selectall"/>&nbsp;全选</label>
+	  			<div class="titsub deliver">投递简历</div>
+				  <div class="titsub collect">收藏职位</div>
+				  <div class="titsub contrast">对比职位</div>
+	  <div class="clear"></div>
+	</div>
+  </form> 
+</div>
+
+<table width="" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>		<div class="page link_bk">
+		<a  href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=1%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=1">首页</a><a  href="jobs-list.php-page=10.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=10">上一页</a><a  href="jobs-list.php-page=6.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=6">6</a>
+<a  href="jobs-list.php-page=7.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=7">7</a>
+<a  href="jobs-list.php-page=8.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=8">8</a>
+<a  href="jobs-list.php-page=9.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=9">9</a>
+<a  href="jobs-list.php-page=10.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=10">10</a>
+<a class="select">11</a>
+<a  href="jobs-list.php-page=12.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=12">12</a>
+<a  href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=13  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=13%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=13">13</a>
+<a  href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=14  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=14%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=14">14</a>
+<a  href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=15  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=15%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=15">15</a>
+<a  href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=16  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=16%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=16">16</a>
+<a  href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?page=17  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?page=17%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=17">17</a>
+<a  href="jobs-list.php-page=12.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=12">下一页</a><a  href="jobs-list.php-page=55.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?page=55">尾页</a><a>11/55页</a><div class="clear"></div>
+		</div>
+		</td>
+  </tr>
+</table>
+
+<div class="footer">
+
+<div class="link_bk">
+
+</div>
+
+<div class="link_bk">
+
+联系地址：浙江省乐清市虹桥镇时代广场A幢8楼C座 联系电话：13968865327 网站备案：浙ICP备09054958号-1  <script type="text/javascript" src="stats-sId=13596324.js" tppabs="http://tajs.qq.com/stats?sId=13596324" charset="UTF-8"></script></div>
+
+<div class="link_bk">乐清市柳城数码科技有限公司旗下七千客工作室&nbsp;&nbsp;&nbsp;<a href="tencent://message/?uin=260839291">QQ:260839291</a>&nbsp;&nbsp;&nbsp;<a href="mailto:qiqianke@qiqianke.com">邮箱：qiqianke@qiqianke.com</a>&nbsp;&nbsp;&nbsp;<a href="javascript:if(confirm(%27http://www.qiqianke.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.qiqianke.com/%27" tppabs="http://www.qiqianke.com/">乐清人才网</a></div>
+
+<div class="link_bk"><a target="_blank" href="javascript:if(confirm(%27http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo%27" tppabs="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo" style="text-decoration:none;"><img src="ico_mailme_12.png" tppabs="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_12.png"/></a></div>
+
+</div>
+
+<div align="center">
+<script type="text/javascript">
+    /*960*90 鍒涘缓浜?2014-08-05*/
+    var cpro_id = "u1645416";
+</script>
+<script src="c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4007882890225227";
+/* 728-90 */
+google_ad_slot = "2485876799";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="show_ads.js" tppabs="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+
+
+
+         <div style="display:none">
+           <a href="http://www.liucity.com/" >少儿编程</a>
+                      <a href="http://www.qiqianke.com/" >七千客少儿编程</a>
+                                 <a href="http://www.xuezaixin.cn/" >雁荡少儿编程</a>
+                                            <a href="http://www.xuezaixin.com/" >雁荡镇少儿编程</a>
+                                                       <a href="http://www.fafapopo.com/" >雁荡小镇少儿编程</a>
+                                                                  <a href="http://www.hqfafa.com/" >悦林庄园少儿编程</a>
+                                                                             <a href="http://www.hppopo.com/" >乐清市少儿编程</a>
+                                                                                        <a href="http://www.menxia.net/" >乐清少儿编程</a>                                                                                             <a href="http://h.qiqianke.com/" >乐清人才网</a>
+       <a href="http://w.liucity.com/" >乐清市柳城数码科技有限公司</a>     
+           </div></body>
+</html>

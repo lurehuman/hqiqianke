@@ -1,0 +1,644 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>按标签搜索  - 职位列表  - 乐清人才网</title>
+<meta name="description" content="乐清人才网 - 按标签搜索 - 招聘岗位">
+<meta name="keywords" content="乐清人才网,职位信息">
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<link rel="shortcut icon" href="favicon.ico" tppabs="http://h.qiqianke.com/favicon.ico" />
+<link href="common.css" tppabs="http://h.qiqianke.com/templates/default/css/common.css" rel="stylesheet" type="text/css" />
+<link href="jobs.css" tppabs="http://h.qiqianke.com/templates/default/css/jobs.css" rel="stylesheet" type="text/css" />
+<script src="jquery.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.js" type='text/javascript' ></script>
+<script src="jquery.dialog.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.dialog.js" type='text/javascript' ></script>
+<script src="jquery.highlight-3.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.highlight-3.js" type='text/javascript' ></script>
+<script src="jquery.vtip-min.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.vtip-min.js" type='text/javascript' ></script>
+<script src="jquery.jobs-list.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.jobs-list.js" type='text/javascript' ></script>
+<script src="cache_classify.js" tppabs="http://h.qiqianke.com/data/cache_classify.js" type='text/javascript' charset="utf-8"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	jobslist();
+	jobscontrast("jobs-contrast.php.htm"/*tpa=http://h.qiqianke.com/jobs/jobs-contrast.php*/);
+	apply_jobs("/");
+	favorites("/");
+	recommend_jobs("/");
+});
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1e25c4bd01650b2dcd316c0489047eb7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+
+<div align="center">
+<script type="text/javascript">
+    /*960*90 鍒涘缓浜?2014-08-05*/
+    var cpro_id = "u1645416";
+</script>
+<script src="c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+
+<div class="head_top">
+
+	<div class="head_top_box">
+
+			<div class="head_top_box_left link_lan"><span id="top_loginform"></span></div>
+
+			<div class="head_top_box_right link_bk">
+
+			
+<div class="lia t_so" id="t_so">
+
+搜索
+
+<div class="op_search" id="op_search"> 
+
+	<div class="stit" ><div>搜索</div></div>
+
+	<div class="sform">
+
+	<form action="" method="get" name="topsearch">
+
+	  <input name="key" type="text"  class="key"/>
+
+	  <div class="sutleft">
+
+	  <input type="button" value="搜职位" class="but70"  id="/jobs/jobs-list.php"/>
+
+	  </div>
+
+	  <div class="sutright">
+
+	  <input type="button" value="搜简历" class="but70" id="/resume/resume-list.php"/>
+
+	   </div>	   
+
+	   <div class="clear"></div>
+
+	   </form>
+
+	</div>
+
+</div>
+
+</div>
+
+<a href="index-1.htm" tppabs="http://h.qiqianke.com/wap/"  class="lia t_m">手机频道</a>
+
+
+<a href="index.htm" tppabs="http://h.qiqianke.com/" class="lia">网站首页</a>
+
+<a href="javascript:if(confirm(%27http://h.qiqianke.com/plus/shortcut.php  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a path excluded by the site\%27s Robot Exclusion parameters.  (Teleport Ultra\%27s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/plus/shortcut.php%27" tppabs="http://h.qiqianke.com/plus/shortcut.php" style="color:#FF3300" class="lia">保存到桌面</a>
+
+<script type="text/javascript">
+
+//顶部部登录
+
+$.get("http://h.qiqianke.com/plus/ajax_user.php", {"act":"top_loginform"},
+
+function (data,textStatus)
+
+{			
+
+$("#top_loginform").html(data);
+
+}
+
+);
+
+//
+
+$("#t_so").hover(
+
+function(){
+
+$("#t_so").css("position","relative");
+
+$("#op_search").show();
+
+},
+
+function(){
+
+$("#op_search").hide();
+
+$("#t_so").css("position","");	
+
+}
+
+);
+
+$("form[name=topsearch] .but70").click(function(){
+
+$("form[name=topsearch]").attr("action",$(this).attr("id"));
+
+$("form[name=topsearch]").submit();
+
+});
+
+</script>
+			</div>
+
+			<div class="clear"></div>
+
+	</div>
+
+</div>
+
+<div class="head">
+
+	<div class="head_logo">
+
+		<a href="index.htm" tppabs="http://h.qiqianke.com/"><img src="logo.jpg" tppabs="http://h.qiqianke.com/data/images/logo.jpg" alt="乐清人才网" border="0" align="absmiddle" /></a>
+
+		
+	</div>
+
+	<div class="head_logo_right">
+
+			
+			
+	</div>
+
+	<div class="clear"></div>
+
+</div><div class="page_location link_bk">
+当前位置：<a href="index.htm" tppabs="http://h.qiqianke.com/">首页</a>&nbsp;>>&nbsp;<a href="index-2.htm" tppabs="http://h.qiqianke.com/jobs/">招聘信息</a>&nbsp;>>&nbsp;按标签搜索
+</div>
+<div class="jobs-nav" id="typenav">
+  <a href="jobs-list.php.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php" >全能搜索</a>
+  <a href="officebuilding-search.php.htm" tppabs="http://h.qiqianke.com/jobs/officebuilding-search.php">按写字楼搜索</a>
+  <a href="street-search.php.htm" tppabs="http://h.qiqianke.com/jobs/street-search.php" >按道路搜索</a>
+  <a href="jobtag-search.php.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php"  class="select">按标签搜索</a>
+  <div class="clear"></div>
+</div>
+<div class="jobsearchbox" id="jobsearchbox"><div class="loading"></div></div>
+<script src="jquery.jobs-tag-search.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.jobs-tag-search.js" type='text/javascript'></script>
+<script type="text/javascript">
+	var getstr=",,,,,";
+	tagso('/templates/default/','/','jobtag-search.php.htm'/*tpa=http://h.qiqianke.com/jobs/jobtag-search.php*/,getstr);
+</script>
+<div class="jobs_list_tip link_greenu" id="jobs_list_tip">
+<ul>
+<li>提醒：凡需先交纳押金、保证金、体检费、材料费、成本费等费用或到指定医院体检等，可能是骗子信息，谨防上当受骗。</li>
+<li>提醒：您知道吗？公司招聘时都会搜索简历库，<a href="javascript:if(confirm(%27http://h.qiqianke.com/user/personal/personal_resume.php?act=resume_list  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a path excluded by the site\%27s Robot Exclusion parameters.  (Teleport Ultra\%27s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/user/personal/personal_resume.php?act=resume_list%27" tppabs="http://h.qiqianke.com/user/personal/personal_resume.php?act=resume_list" target="_blank">免费发布简历</a>，获取更多机会！</li>
+</ul>
+</div>
+<!--职位列表 -->
+<div class="jobs_list">
+  <form action="" method="post"  name="formjobslist" id="formjobslist"  target="_blank">
+    <div class="tit">
+	 			<label><input name="selectall" type="checkbox" value="" id="selectall"/>&nbsp;全选</label>
+	  			<div class="titsub deliver" >投递简历</div>
+				<div class="titsub collect" >收藏职位</div>
+				<div class="titsub contrast" >对比职位</div> 
+				<div class="pageminnav link_lan"><span>1/55页</span><a class=""><</a><a  href="jobtag-search.php-page=2.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=2">下一页</a><div class="clear"></div></div>
+	 			<div class="clear"></div>
+	</div>	
+	<div class="sort">
+		  <div class="txt link_bk">
+		  <span>排序：</span>
+		  <a href="javascript:void(0);" class="select">默认</a>
+		  <div class="pagerow"><span>每页显示：</span>
+		  <a href="jobtag-search.php-inforow=10&key=&page=1.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?inforow=10&key=&page=1"  class="select">10</a>
+		  <a href="jobtag-search.php-inforow=20&key=&page=1.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?inforow=20&key=&page=1" >20</a>
+		  <a href="jobtag-search.php-inforow=30&key=&page=1.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?inforow=30&key=&page=1" >30</a>
+		  </div>
+		  </div>
+	</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="619"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=619.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=619" target="_blank">轻松日赚300元天</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=437.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=437" target="_blank">急招网络轻松工作</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">5000~10000元/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=220.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=220">乐清市/北白象镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：若干人   | 点击：88次</p>
+							<p style="color: #999999" class="striking">急招聘每天工资80-300，时间你自己安排◇工作要求◇：客服腾讯号：【1290 283 688 】
+☆工作地点：家里、办公室、网吧均可工作.（能上网即可）☆有简单网络知识和购物网站应用的基础☆上网方便，全职、专职网络操作员☆对工作认真负责，服从领导安排，团结同事。一天只需2-3小时上网时间，轻...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=31.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=31">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="619">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="619">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D619|轻松日赚300元天'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="619"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="679"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=679.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=679" target="_blank">轻松赚300元天</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=437.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=437" target="_blank">急招网络轻松工作</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">1万以上/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=215.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=215">乐清市/雁荡镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：若干人   | 点击：68次</p>
+							<p style="color: #999999" class="striking">急招聘每天工资80-300，时间你自己安排◇工作要求◇：客服腾讯号：【1290 283 688 】
+☆工作地点：家里、办公室、网吧均可工作.（能上网即可）☆有简单网络知识和购物网站应用的基础☆上网方便，全职、专职网络操作员☆对工作认真负责，服从领导安排，团结同事。一天只需2-3小时上网时间，轻...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=31.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=31">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="679">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="679">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D679|轻松赚300元天'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="679"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="682"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=682.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=682" target="_blank">轻松日赚300元</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=437.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=437" target="_blank">急招网络轻松工作</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=215.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=215">乐清市/雁荡镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：若干人   | 点击：53次</p>
+							<p style="color: #999999" class="striking">正 规 招 人 员 3 0 0 元 以 上 一 天 即 时 结 算，绝 对 真 实, 有 意 者 请 咨 询 Q Q:1290 283 688 非 诚 勿 扰</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=31.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=31">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="682">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="682">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D682|轻松日赚300元'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="682"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="550"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=550.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=550" target="_blank">急招聘不用坐班的兼职月薪50...</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=382.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=382" target="_blank">鑫领域网络商务</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：59次</p>
+							<p style="color: #999999" class="striking">佳钰网络职业要求：
+1、上网条件–兼 职/专职均可 (必须有智能手机、平板电脑或者电脑必备上网条件)。
+2、时间安排–平均每天能有3小时上网时间即可（时间段不限具体由自己安排）。
+3、工资结算–工资日结,银行卡结算,月薪5000元。
+4、适合不愿给别人打工卖力，下岗后想再就业者,或在家闲...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="550">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="550">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D550|急招聘不用坐班的兼职月薪50...'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="550"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="551"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=551.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=551" target="_blank">急招聘不用坐班的兼职月薪50...</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=382.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=382" target="_blank">鑫领域网络商务</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：40次</p>
+							<p style="color: #999999" class="striking">佳钰网络职业要求：
+1、上网条件–兼 职/专职均可 (必须有智能手机、平板电脑或者电脑必备上网条件)。
+2、时间安排–平均每天能有3小时上网时间即可（时间段不限具体由自己安排）。
+3、工资结算–工资日结,银行卡结算,月薪5000元。
+4、适合不愿给别人打工卖力，下岗后想再就业者,或在家闲...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="551">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="551">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D551|急招聘不用坐班的兼职月薪50...'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="551"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="552"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=552.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=552" target="_blank">急招聘不用坐班的兼职月薪50...</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=382.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=382" target="_blank">鑫领域网络商务</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：65次</p>
+							<p style="color: #999999" class="striking">佳钰网络职业要求：
+1、上网条件–兼 职/专职均可 (必须有智能手机、平板电脑或者电脑必备上网条件)。
+2、时间安排–平均每天能有3小时上网时间即可（时间段不限具体由自己安排）。
+3、工资结算–工资日结,银行卡结算,月薪5000元。
+4、适合不愿给别人打工卖力，下岗后想再就业者,或在家闲...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="552">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="552">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D552|急招聘不用坐班的兼职月薪50...'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="552"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="553"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=553.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=553" target="_blank">急招聘不用坐班的兼职月薪50...</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=382.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=382" target="_blank">鑫领域网络商务</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：85次</p>
+							<p style="color: #999999" class="striking">佳钰网络职业要求：
+1、上网条件–兼 职/专职均可 (必须有智能手机、平板电脑或者电脑必备上网条件)。
+2、时间安排–平均每天能有3小时上网时间即可（时间段不限具体由自己安排）。
+3、工资结算–工资日结,银行卡结算,月薪5000元。
+4、适合不愿给别人打工卖力，下岗后想再就业者,或在家闲...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="553">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="553">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D553|急招聘不用坐班的兼职月薪50...'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="553"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="498"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=498.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=498" target="_blank">适合家庭主妇，上班族的兼职...</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=342.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=342" target="_blank">欣欣科技网络公司</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：38次</p>
+							<p style="color: #999999" class="striking">佳钰网络职业要求：
+1、上网条件–兼职/专职均可 (在家中、办公室、网吧、寝室等地)
+2、时间安排–平均每天能有２－４小时上网时间即可（时间段不限具体由自己安排）
+3、工资结算–工资日结,银行卡结算,月薪5000元
+4、适合不愿给别人打工卖力，下岗后想再就业者,或在家闲着无所事者！
+5...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="498">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="498">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D498|适合家庭主妇，上班族的兼职...'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="498"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="499"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=499.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=499" target="_blank">适合家庭主妇，上班族的兼职...</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=342.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=342" target="_blank">欣欣科技网络公司</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：40次</p>
+							<p style="color: #999999" class="striking">佳钰网络职业要求：
+1、上网条件–兼职/专职均可 (在家中、办公室、网吧、寝室等地)
+2、时间安排–平均每天能有２－４小时上网时间即可（时间段不限具体由自己安排）
+3、工资结算–工资日结,银行卡结算,月薪5000元
+4、适合不愿给别人打工卖力，下岗后想再就业者,或在家闲着无所事者！
+5...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="499">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="499">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D499|适合家庭主妇，上班族的兼职...'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="499"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		<div class="list link_lan">
+			  <div class="li_left_check"><input name="jid" type="checkbox" value="500"  />
+			  </div>
+		  <div class="li_left">
+							<div class="jobname striking">
+							<strong><a href="jobs-show.php-id=500.htm" tppabs="http://h.qiqianke.com/jobs/jobs-show.php?id=500" target="_blank">适合家庭主妇，上班族的兼职...</a></strong>
+																																			</div>
+							<div class="com striking">
+							<a href="company-show.php-id=342.htm" tppabs="http://h.qiqianke.com/company/company-show.php?id=342" target="_blank">欣欣科技网络公司</a>
+							 <img src="79.gif" tppabs="http://h.qiqianke.com/templates/default/images/79.gif" border="0" align="absmiddle" title="企业已通过审核" class="vtip"/>														</div>
+							<div class="wage">3000~5000元/月</div>
+							
+							<div class="date">						
+							2017-03-11
+							</div>
+							<div class="clear"></div>							
+							<div class="txt striking">
+							<p class="link_bku">工作地点：<a href="jobs-list.php-district=12&sdistrict=543.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?district=12&sdistrict=543">乐清市/柳市镇</a>&nbsp;&nbsp;&nbsp;&nbsp;学历要求：不限制  | 性别要求：不限  | 招聘人数：222人   | 点击：42次</p>
+							<p style="color: #999999" class="striking">佳钰网络职业要求：
+1、上网条件–兼职/专职均可 (在家中、办公室、网吧、寝室等地)
+2、时间安排–平均每天能有２－４小时上网时间即可（时间段不限具体由自己安排）
+3、工资结算–工资日结,银行卡结算,月薪5000元
+4、适合不愿给别人打工卖力，下岗后想再就业者,或在家闲着无所事者！
+5...</p>
+							</div>							
+				            <div class="tag">
+							  <div class="left link_greenu"><a href="jobs-list.php-category=19&subclass=48.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?category=19&subclass=48">[查看类似职位]</a><a href="javascript:void(0)" class="app_jobs" id="500">[申请职位]</a><a href="javascript:void(0)" class="add_favorites" id="500">[加入收藏]</a><a href="javascript:void(0)" class="recommend" url='%2Fjobs%2Fjobs-show.php%3Fid%3D500|适合家庭主妇，上班族的兼职...'>[推荐给好友]</a></div>
+							 <div class="right striking link_bku">标签： 无</div>
+							  <div class="clear"></div>
+							</div>
+		  </div>		  
+		  <div class="li_right">
+			 <img src="53.gif" tppabs="http://h.qiqianke.com/templates/default/images/53.gif" border="0"  class="app_jobs" id="500"/> 
+		  </div>
+				  <div class="clear"></div>
+		</div>
+		    <div class="tit" style="border-top:0px;">
+	 <label> <input name="selectall" type="checkbox" value="" id="selectall"/>&nbsp;全选</label>
+	  			<div class="titsub deliver">投递简历</div>
+				  <div class="titsub collect">收藏职位</div>
+				  <div class="titsub contrast">对比职位</div>
+	  <div class="clear"></div>
+	</div>
+  </form> 
+</div>
+
+<table width="" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>		<div class="page link_bk">
+		<a class="">首页</a><a class="">上一页</a><a class="select">1</a>
+<a  href="jobtag-search.php-page=2.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=2">2</a>
+<a  href="jobtag-search.php-page=3.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=3">3</a>
+<a  href="jobtag-search.php-page=4.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=4">4</a>
+<a  href="jobtag-search.php-page=5.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=5">5</a>
+<a  href="jobtag-search.php-page=6.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=6">6</a>
+<a  href="jobtag-search.php-page=7.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=7">7</a>
+<a  href="jobtag-search.php-page=8.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=8">8</a>
+<a  href="jobtag-search.php-page=9.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=9">9</a>
+<a  href="jobtag-search.php-page=10.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=10">10</a>
+<a  href="jobtag-search.php-page=11.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=11">11</a>
+<a  href="jobtag-search.php-page=12.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=12">12</a>
+<a  href="jobtag-search.php-page=2.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=2">下一页</a><a  href="jobtag-search.php-page=55.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php?page=55">尾页</a><a>1/55页</a><div class="clear"></div>
+		</div>
+		</td>
+  </tr>
+</table>
+
+<div class="footer">
+
+<div class="link_bk">
+
+</div>
+
+<div class="link_bk">
+
+联系地址：浙江省乐清市虹桥镇时代广场A幢8楼C座 联系电话：13968865327 网站备案：浙ICP备09054958号-1  <script type="text/javascript" src="stats-sId=13596324.js" tppabs="http://tajs.qq.com/stats?sId=13596324" charset="UTF-8"></script></div>
+
+<div class="link_bk">乐清市柳城数码科技有限公司旗下七千客工作室&nbsp;&nbsp;&nbsp;<a href="tencent://message/?uin=260839291">QQ:260839291</a>&nbsp;&nbsp;&nbsp;<a href="mailto:qiqianke@qiqianke.com">邮箱：qiqianke@qiqianke.com</a>&nbsp;&nbsp;&nbsp;<a href="javascript:if(confirm(%27http://www.qiqianke.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.qiqianke.com/%27" tppabs="http://www.qiqianke.com/">乐清人才网</a></div>
+
+<div class="link_bk"><a target="_blank" href="javascript:if(confirm(%27http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo%27" tppabs="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo" style="text-decoration:none;"><img src="ico_mailme_12.png" tppabs="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_12.png"/></a></div>
+
+</div>
+
+<div align="center">
+<script type="text/javascript">
+    /*960*90 鍒涘缓浜?2014-08-05*/
+    var cpro_id = "u1645416";
+</script>
+<script src="c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4007882890225227";
+/* 728-90 */
+google_ad_slot = "2485876799";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="show_ads.js" tppabs="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+
+
+
+         <div style="display:none">
+           <a href="http://www.liucity.com/" >少儿编程</a>
+                      <a href="http://www.qiqianke.com/" >七千客少儿编程</a>
+                                 <a href="http://www.xuezaixin.cn/" >雁荡少儿编程</a>
+                                            <a href="http://www.xuezaixin.com/" >雁荡镇少儿编程</a>
+                                                       <a href="http://www.fafapopo.com/" >雁荡小镇少儿编程</a>
+                                                                  <a href="http://www.hqfafa.com/" >悦林庄园少儿编程</a>
+                                                                             <a href="http://www.hppopo.com/" >乐清市少儿编程</a>
+                                                                                        <a href="http://www.menxia.net/" >乐清少儿编程</a>                                                                                             <a href="http://h.qiqianke.com/" >乐清人才网</a>
+       <a href="http://w.liucity.com/" >乐清市柳城数码科技有限公司</a>     
+           </div></body>
+</html>

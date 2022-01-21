@@ -1,0 +1,58 @@
+/*--------职位展示-------*/
+.jobs-show-top {width:985px; margin:0 auto; margin-top:8px;}
+.jobs-show-top  h1{  height:45px; font-size:30px; font-family:"黑体";}
+.jobs-show-top  .jobbottom{ height:25px;color:#FF6600; font-size:14px; color:#FF9900}
+.jobs-show-top  .jobbottom .comname{ float:left;}
+.jobs-show-top  .jobbottom .comname a{ color: #FF6600; text-decoration:none}
+.jobs-show-top  .jobbottom .comname a:hover{ text-decoration:underline}
+.jobs-show-top  .jobbottom .date{float:left;color: #666666; font-size:12px; padding-left:5px;}
+.jobs-show {width:985px; margin:0 auto; margin-top:8px;}
+.jobs-show  .left{width: 710px; float:left}
+.jobs-show  .left .toptabs{width: 702px; background-image: url(59.gif)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/59.gif*/; background-position:bottom; height:33px; line-height:33px; background-repeat:repeat-x;}
+.jobs-show  .left .toptabs a{ height:33px; line-height:33px; text-align:center; display:block; font-size:14px;width:104px;background:url(58.gif)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/58.gif*/ no-repeat 0px -36px; float:left; text-decoration:none; color:#666666; margin-right:8px;}
+.jobs-show  .left .toptabs a.selected{ background:url(58.gif)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/58.gif*/ no-repeat 0px 0px; font-weight:bold; color:#333333}
+.jobs-show  .left .show{width:670px;border:1px solid #E4E4E4; border-top:0px; padding:15px;}
+.jobs-show  .left .show .share{ text-align:center; padding:10px; padding-left:180px;}
+.jobs-show  .left .show .tip{ color: #009900}
+.jobs-show  .left .show .contact{ padding:3px; border:1px   #FF9900 solid; background-color: #FDFBF0; padding-left:8px;}
+.jobs-show  .left .show .jobsshow{ line-height:180%;word-break:break-all;word-wrap:break-word;}
+.jobs-show  .left .show .jobsshow .title{ height:33px ; line-height:33px; font-size:14px; color:#333333}
+.jobs-show  .left .show .jobsshow .remind{ background-color: #FFFDE8; border:1px #FF9900 solid; color:#FF0000; padding:8px 15px;}
+.jobs-show  .left .show .floatli li{width:335px; float:left; height:26px; line-height:26px; overflow:hidden}
+.jobs-show  .left .show .company{ line-height:180%; position:relative}
+.jobs-show  .left .show .company .logo{ position:absolute; right:0px; top:15px; }
+.jobs-show  .left .show .company .ctitle{ height:33px ; line-height:33px; font-size:14px; color:#333333}
+.jobs-show  .left .show .company  li{  height:26px; line-height:26px;}
+.jobs-show  .left .show .joblist{ line-height:180%}
+.jobs-show  .left .show .joblist  .listtit{ font-weight:bold}
+.jobs-show  .left .show .joblist  .list{ border-bottom:1px  #CCCCCC dashed}
+.jobs-show  .right{width:275px;float:left; padding-top:33px;}
+.jobs-show  .right .txtbox{width:273px;border:1px solid #E4E4E4; margin-bottom:8px;}
+.jobs-show  .right .txtbox .tit{height:30px;background:url(52-1.gif)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/52.gif*/ repeat-x 0px -239px; border-bottom:1px solid #E4E4E4; line-height:30px; font-size:14px; font-weight:bold; color:#666666; padding-left:15px;}
+.jobs-show  .right .txtbox .txt{ padding:5px;}
+.jobs-show  .right .txtbox .txt li{ padding-left:10px;}
+.jobs-show  .right .txtbox .txt1{ padding:5px; padding-left:15px; line-height:180%; border-bottom:1px #E4E4E4 solid}
+/*--------企业展示-------*/
+.company-show {width:985px; margin:0 auto; margin-top:8px;}
+.company-show  .left{width: 710px; float:left}
+.company-show  .left .show{width:670px;border:1px solid #E4E4E4; padding:15px; line-height:180% ; position:relative;background-image:url(16-1.jpg)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/16.jpg*/; background-repeat:repeat-x;word-break:break-all;word-wrap:break-word;}
+.company-show  .left .show  h1{height:35px; line-height:35px; font-size:30px; font-family:"黑体"; overflow:hidden; float:left}
+.company-show  .left .show  .item{width:500px; margin-bottom:20px;}
+.company-show  .left .show  .item li{height:26px; line-height:26px;}
+.company-show  .left .show  .title{ height:33px ; line-height:33px; font-size:14px; color:#333333; padding-top:10px;}
+.company-show  .left .show  .bottom{ height:30px; line-height:30px; color:#FF6600; }
+.company-show  .left .show  .logo{ right:15px; top:78px; position:absolute}
+.company-show  .left .show  .listtit{ font-weight:bold}
+.company-show  .left .show  .list{ border-bottom:1px  #CCCCCC dashed}
+.company-show  .left .show .contact{ padding:3px; border:1px   #FF9900 solid; background-color: #FDFBF0; padding-left:8px;}
+.company-show  .right{width:275px;float:left;}
+.company-show  .right .txtbox{width:273px;border:1px solid #E4E4E4; margin-bottom:8px;}
+.company-show  .right .txtbox .tit{height:30px;background:url(52-1.gif)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/52.gif*/ repeat-x 0px -239px; border-bottom:1px solid #E4E4E4; line-height:30px; font-size:14px; font-weight:bold; color:#666666; padding-left:15px;}
+.company-show  .right .txtbox .txt{ padding:5px;}
+.company-show  .right .txtbox .txt li{ padding-left:10px;}
+.company-show  .right .txtbox .txt1{ padding:5px; padding-left:15px; line-height:180%; border-bottom:1px #E4E4E4 solid}
+/*--------营业执照图标-------*/
+.company_license1{background:url(1.gif)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/1.gif*/ no-repeat 0px 0px; width:38px; height:24px; margin-top:5px; margin-left:5px; float:left}
+.company_license2{background:url(1.gif)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/1.gif*/ no-repeat 0px -25px;width:38px; height:24px;margin-top:5px; margin-left:5px; float:left}
+.company_license3{background:url(1.gif)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/1.gif*/ no-repeat 0px -51px;width:23px; height:18px;margin-top:0px; margin-left:5px; float:left}
+.company_license4{background:url(1.gif)/*tpa=http://h.qiqianke.com/templates/tpl_company/default/images/1.gif*/ no-repeat 0px -72px;width:23px; height:18px;margin-top:0px; margin-left:5px; float:left}

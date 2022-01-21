@@ -1,0 +1,467 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><title>人才信息-乐清人才网</title>
+<meta name="description" content="乐清人才网">
+<meta name="keywords" content="乐清人才网">
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<link rel="shortcut icon" href="favicon.ico" tppabs="http://h.qiqianke.com/favicon.ico" />
+<link href="common.css" tppabs="http://h.qiqianke.com/templates/default/css/common.css" rel="stylesheet" type="text/css" />
+<link href="resume.css" tppabs="http://h.qiqianke.com/templates/default/css/resume.css" rel="stylesheet" type="text/css" />
+<script src="jquery.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.js" type='text/javascript' ></script>
+<script src="cache_classify.js" tppabs="http://h.qiqianke.com/data/cache_classify.js" type='text/javascript' charset="utf-8"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1e25c4bd01650b2dcd316c0489047eb7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+
+<div align="center">
+<script type="text/javascript">
+    /*960*90 鍒涘缓浜?2014-08-05*/
+    var cpro_id = "u1645416";
+</script>
+<script src="c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+
+<div class="head_top">
+
+	<div class="head_top_box">
+
+			<div class="head_top_box_left link_lan"><span id="top_loginform"></span></div>
+
+			<div class="head_top_box_right link_bk">
+
+			
+<div class="lia t_so" id="t_so">
+
+搜索
+
+<div class="op_search" id="op_search"> 
+
+	<div class="stit" ><div>搜索</div></div>
+
+	<div class="sform">
+
+	<form action="" method="get" name="topsearch">
+
+	  <input name="key" type="text"  class="key"/>
+
+	  <div class="sutleft">
+
+	  <input type="button" value="搜职位" class="but70"  id="/jobs/jobs-list.php"/>
+
+	  </div>
+
+	  <div class="sutright">
+
+	  <input type="button" value="搜简历" class="but70" id="/resume/resume-list.php"/>
+
+	   </div>	   
+
+	   <div class="clear"></div>
+
+	   </form>
+
+	</div>
+
+</div>
+
+</div>
+
+<a href="index-1.htm" tppabs="http://h.qiqianke.com/wap/"  class="lia t_m">手机频道</a>
+
+
+<a href="index.htm" tppabs="http://h.qiqianke.com/" class="lia">网站首页</a>
+
+<a href="javascript:if(confirm(%27http://h.qiqianke.com/plus/shortcut.php  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a path excluded by the site\%27s Robot Exclusion parameters.  (Teleport Ultra\%27s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/plus/shortcut.php%27" tppabs="http://h.qiqianke.com/plus/shortcut.php" style="color:#FF3300" class="lia">保存到桌面</a>
+
+<script type="text/javascript">
+
+//顶部部登录
+
+$.get("http://h.qiqianke.com/plus/ajax_user.php", {"act":"top_loginform"},
+
+function (data,textStatus)
+
+{			
+
+$("#top_loginform").html(data);
+
+}
+
+);
+
+//
+
+$("#t_so").hover(
+
+function(){
+
+$("#t_so").css("position","relative");
+
+$("#op_search").show();
+
+},
+
+function(){
+
+$("#op_search").hide();
+
+$("#t_so").css("position","");	
+
+}
+
+);
+
+$("form[name=topsearch] .but70").click(function(){
+
+$("form[name=topsearch]").attr("action",$(this).attr("id"));
+
+$("form[name=topsearch]").submit();
+
+});
+
+</script>
+			</div>
+
+			<div class="clear"></div>
+
+	</div>
+
+</div>
+
+<div class="head">
+
+	<div class="head_logo">
+
+		<a href="index.htm" tppabs="http://h.qiqianke.com/"><img src="logo.jpg" tppabs="http://h.qiqianke.com/data/images/logo.jpg" alt="乐清人才网" border="0" align="absmiddle" /></a>
+
+		
+	</div>
+
+	<div class="head_logo_right">
+
+			
+			
+	</div>
+
+	<div class="clear"></div>
+
+</div><div class="page_location link_bk">
+当前位置：<a href="index.htm" tppabs="http://h.qiqianke.com/">首页</a>&nbsp;>>&nbsp;<a href="index-3.htm" tppabs="http://h.qiqianke.com/resume/">求职信息</a>
+</div>
+<div class="resume-nav">
+  <a href="resume-list.php.htm" tppabs="http://h.qiqianke.com/resume/resume-list.php" class="select">全能搜索</a>
+  <a href="resume-search.php.htm" tppabs="http://h.qiqianke.com/resume/resume-search.php" >按标签搜索</a>
+  <div class="clear"></div>
+</div>
+<div class="resumesearchbox link_bkg" id="resumesearchbox"><div class="loading"></div></div>
+<script src="jquery.resume-search.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.resume-search.js" type='text/javascript'></script>
+<script type="text/javascript">
+	var getstr=",,,,,,,,";
+	var getkey="请输入：技能，特长，职位，学历，姓名，地区，学校等...";
+	allaround('/templates/default/','/','resume-list.php.htm'/*tpa=http://h.qiqianke.com/resume/resume-list.php*/,getkey,getstr);
+</script>
+<div class="resumebox link_greenu">
+<h2>照片简历 </h2>
+<div class="photobox">
+		  <div class="imgdiv">
+		  <a href="resume-show.php-id=141.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=141" target="_blank"><img src="1441426857304.jpg" tppabs="http://h.qiqianke.com/data/photo/thumb/2015/09/05/1441426857304.jpg"  width="68" height="85" border="0"/></a>
+		  </div>  
+		  <div class="txt">
+<a href="resume-show.php-id=141.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=141" target="_blank">韩乐岭</a><br />
+性别：男&nbsp;&nbsp;年龄：30岁&nbsp;&nbsp;<br />
+学历：中专&nbsp;&nbsp;工作经验：5-10年<br />
+<span>仓库管理,生产管理/车间主任,计划员,检...</span>
+		  </div>
+		  <div class="clear"></div>
+</div> 
+<div class="photobox">
+		  <div class="imgdiv">
+		  <a href="resume-show.php-id=140.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=140" target="_blank"><img src="1435283146509.jpg" tppabs="http://h.qiqianke.com/data/photo/thumb/2015/06/26/1435283146509.jpg"  width="68" height="85" border="0"/></a>
+		  </div>  
+		  <div class="txt">
+<a href="resume-show.php-id=140.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=140" target="_blank">张鹏程</a><br />
+性别：男&nbsp;&nbsp;年龄：37岁&nbsp;&nbsp;<br />
+学历：高中&nbsp;&nbsp;工作经验：10年以上<br />
+<span>快递员/速递员</span>
+		  </div>
+		  <div class="clear"></div>
+</div> 
+<div class="photobox">
+		  <div class="imgdiv">
+		  <a href="resume-show.php-id=130.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=130" target="_blank"><img src="1368759541726.jpg" tppabs="http://h.qiqianke.com/data/photo/thumb/2013/05/17/1368759541726.jpg"  width="68" height="85" border="0"/></a>
+		  </div>  
+		  <div class="txt">
+<a href="resume-show.php-id=130.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=130" target="_blank">罗莎莎</a><br />
+性别：女&nbsp;&nbsp;年龄：28岁&nbsp;&nbsp;<br />
+学历：初中&nbsp;&nbsp;工作经验：无经验<br />
+<span>行政专员/助理</span>
+		  </div>
+		  <div class="clear"></div>
+</div> 
+<div class="photobox">
+		  <div class="imgdiv">
+		  <a href="resume-show.php-id=127.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=127" target="_blank"><img src="1366867737988.jpg" tppabs="http://h.qiqianke.com/data/photo/thumb/2013/04/25/1366867737988.jpg"  width="68" height="85" border="0"/></a>
+		  </div>  
+		  <div class="txt">
+<a href="resume-show.php-id=127.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=127" target="_blank">余婷</a><br />
+性别：女&nbsp;&nbsp;年龄：26岁&nbsp;&nbsp;<br />
+学历：中专&nbsp;&nbsp;工作经验：1年以下<br />
+<span>行政专员/助理,人事专员/助理,文员/秘书...</span>
+		  </div>
+		  <div class="clear"></div>
+</div> 
+<div class="photobox">
+		  <div class="imgdiv">
+		  <a href="resume-show.php-id=126.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=126" target="_blank"><img src="1366866712155.jpg" tppabs="http://h.qiqianke.com/data/photo/thumb/2013/04/25/1366866712155.jpg"  width="68" height="85" border="0"/></a>
+		  </div>  
+		  <div class="txt">
+<a href="resume-show.php-id=126.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=126" target="_blank">林夏伊</a><br />
+性别：女&nbsp;&nbsp;年龄：26岁&nbsp;&nbsp;<br />
+学历：中专&nbsp;&nbsp;工作经验：1年以下<br />
+<span>电子商务,技术文员/助理,人力资源经理/...</span>
+		  </div>
+		  <div class="clear"></div>
+</div> 
+<div class="photobox">
+		  <div class="imgdiv">
+		  <a href="resume-show.php-id=114.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=114" target="_blank"><img src="1362839260407.jpg" tppabs="http://h.qiqianke.com/data/photo/thumb/2013/03/09/1362839260407.jpg"  width="68" height="85" border="0"/></a>
+		  </div>  
+		  <div class="txt">
+<a href="resume-show.php-id=114.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=114" target="_blank">冯星</a><br />
+性别：女&nbsp;&nbsp;年龄：32岁&nbsp;&nbsp;<br />
+学历：高中&nbsp;&nbsp;工作经验：1-3年<br />
+<span>文员/秘书,仓库保管,仓库管理员</span>
+		  </div>
+		  <div class="clear"></div>
+</div> 
+<div class="clear"></div>
+</div>
+
+<div class="resumebox">
+<h2>最新简历 </h2>
+<ul class="link_bkgu">
+<li class="newresume"><a href="resume-show.php-id=151.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=151" target="_blank">倪敏</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+大专&nbsp;&nbsp;
+<span>会计主管</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=149.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=149" target="_blank">林棋</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+高中&nbsp;&nbsp;
+<span>导购员,快递员/速递员,服务员,投资/理财顾问</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=148.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=148" target="_blank">孔梦露</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>营业员/收银员,幼儿教育</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=147.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=147" target="_blank">石长锋</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+中技&nbsp;&nbsp;
+<span>无线通信工程师,生产管理/车间主任,采购管理,仓库管理...</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=146.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=146" target="_blank">潘舟</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+大专&nbsp;&nbsp;
+<span>采购经理/主管,采购员/采购助理</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=143.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=143" target="_blank">王晓</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>销售主管/助理,出纳</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=142.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=142" target="_blank">王王</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+本科&nbsp;&nbsp;
+<span>工业造型设计,厨师</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=141.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=141" target="_blank">韩乐岭</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>仓库管理,生产管理/车间主任,计划员,检验员,跟单员</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=140.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=140" target="_blank">张鹏程</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+高中&nbsp;&nbsp;
+<span>快递员/速递员</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=139.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=139" target="_blank">李小红</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>促销员,其他销售类职位,行政专员/助理,报关员/单证员,...</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=138.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=138" target="_blank">陈中福</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+高中&nbsp;&nbsp;
+<span>司机,模具工,普工</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=137.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=137" target="_blank">徐先生</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+高中&nbsp;&nbsp;
+<span>司机,其他后勤类职位,其它酒店类职位,公务员</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=135.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=135" target="_blank">周法</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+大专&nbsp;&nbsp;
+<span>电脑操作员/打字员,快递员/速递员</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=134.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=134" target="_blank">包中建</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+本科&nbsp;&nbsp;
+<span>中学教师</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=132.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=132" target="_blank">吴筱欢</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>行政专员/助理,人事专员/助理,经理助理,文员/秘书,其他...</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=130.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=130" target="_blank">罗莎莎</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+初中&nbsp;&nbsp;
+<span>行政专员/助理</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=129.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=129" target="_blank">夏良武</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>司机</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=128.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=128" target="_blank">田飞</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+高中&nbsp;&nbsp;
+<span>品质/质量管理(QA·QC)</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=127.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=127" target="_blank">余婷</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>行政专员/助理,人事专员/助理,文员/秘书</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=126.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=126" target="_blank">林夏伊</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>电子商务,技术文员/助理,人力资源经理/主管,文员/秘书...</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=125.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=125" target="_blank">付雪</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+大专&nbsp;&nbsp;
+<span>销售代表,客户服务/咨询,客服专员,其他销售类职位,后勤...</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=124.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=124" target="_blank">冯婷婷</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>幼儿教育</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=123.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=123" target="_blank">邱忠剑</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>销售主管/助理,物流管理,计划员</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=122.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=122" target="_blank">俞玲玲</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>收银员</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=121.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=121" target="_blank">窦兵</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>客服专员</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=120.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=120" target="_blank">黄田子</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+大专&nbsp;&nbsp;
+<span>会计主管,会计</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=119.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=119" target="_blank">卢阿光</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+高中&nbsp;&nbsp;
+<span>保安,司机</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=117.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=117" target="_blank">赖曌阳</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+初中&nbsp;&nbsp;
+<span>制衣</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=116.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=116" target="_blank">冯婷婷</a>&nbsp;&nbsp;
+女&nbsp;&nbsp;
+中专&nbsp;&nbsp;
+<span>行政专员/助理,人事专员/助理,招聘专员/助理,经理助理...</span>
+</li>
+<li class="newresume"><a href="resume-show.php-id=97.htm" tppabs="http://h.qiqianke.com/resume/resume-show.php?id=97" target="_blank">虞**</a>&nbsp;&nbsp;
+男&nbsp;&nbsp;
+大专&nbsp;&nbsp;
+<span>分公司/办事处经理,销售部经理,销售工程师,店面经理,店...</span>
+</li>
+</ul>
+<div class="clear"></div>
+</div>
+
+<div class="links link_bkg">
+		<strong>友情链接：</strong>
+		<a href="add_link.php.htm" tppabs="http://h.qiqianke.com/link/add_link.php"  style="color: #009900">[申请友情连接]</a>
+  <div class="clear"></div>
+			<div class="clear"></div>
+</div>
+
+<div class="footer">
+
+<div class="link_bk">
+
+</div>
+
+<div class="link_bk">
+
+联系地址：浙江省乐清市虹桥镇时代广场A幢8楼C座 联系电话：13968865327 网站备案：浙ICP备09054958号-1  <script type="text/javascript" src="stats-sId=13596324.js" tppabs="http://tajs.qq.com/stats?sId=13596324" charset="UTF-8"></script></div>
+
+<div class="link_bk">乐清市柳城数码科技有限公司旗下七千客工作室&nbsp;&nbsp;&nbsp;<a href="tencent://message/?uin=260839291">QQ:260839291</a>&nbsp;&nbsp;&nbsp;<a href="mailto:qiqianke@qiqianke.com">邮箱：qiqianke@qiqianke.com</a>&nbsp;&nbsp;&nbsp;<a href="javascript:if(confirm(%27http://www.qiqianke.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.qiqianke.com/%27" tppabs="http://www.qiqianke.com/">乐清人才网</a></div>
+
+<div class="link_bk"><a target="_blank" href="javascript:if(confirm(%27http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo%27" tppabs="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo" style="text-decoration:none;"><img src="ico_mailme_12.png" tppabs="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_12.png"/></a></div>
+
+</div>
+
+<div align="center">
+<script type="text/javascript">
+    /*960*90 鍒涘缓浜?2014-08-05*/
+    var cpro_id = "u1645416";
+</script>
+<script src="c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4007882890225227";
+/* 728-90 */
+google_ad_slot = "2485876799";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="show_ads.js" tppabs="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+
+
+
+         <div style="display:none">
+           <a href="http://www.liucity.com/" >少儿编程</a>
+                      <a href="http://www.qiqianke.com/" >七千客少儿编程</a>
+                                 <a href="http://www.xuezaixin.cn/" >雁荡少儿编程</a>
+                                            <a href="http://www.xuezaixin.com/" >雁荡镇少儿编程</a>
+                                                       <a href="http://www.fafapopo.com/" >雁荡小镇少儿编程</a>
+                                                                  <a href="http://www.hqfafa.com/" >悦林庄园少儿编程</a>
+                                                                             <a href="http://www.hppopo.com/" >乐清市少儿编程</a>
+                                                                                        <a href="http://www.menxia.net/" >乐清少儿编程</a>                                                                                             <a href="http://h.qiqianke.com/" >乐清人才网</a>
+       <a href="http://w.liucity.com/" >乐清市柳城数码科技有限公司</a>     
+           </div></body>
+</html>

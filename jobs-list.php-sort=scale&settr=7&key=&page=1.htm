@@ -1,0 +1,300 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>7天内 - 职位列表  - 乐清人才网</title>
+<meta name="description" content="乐清人才网招聘岗位">
+<meta name="keywords" content="乐清人才网,职位信息">
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<link rel="shortcut icon" href="favicon.ico" tppabs="http://h.qiqianke.com/favicon.ico" />
+<link href="common.css" tppabs="http://h.qiqianke.com/templates/default/css/common.css" rel="stylesheet" type="text/css" />
+<link href="jobs.css" tppabs="http://h.qiqianke.com/templates/default/css/jobs.css" rel="stylesheet" type="text/css" />
+<script src="jquery.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.js" type='text/javascript' ></script>
+<script src="jquery.dialog.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.dialog.js" type='text/javascript' ></script>
+<script src="jquery.highlight-3.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.highlight-3.js" type='text/javascript' ></script>
+<script src="jquery.vtip-min.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.vtip-min.js" type='text/javascript' ></script>
+<script src="jquery.jobs-list.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.jobs-list.js" type='text/javascript' ></script>
+<script src="cache_classify.js" tppabs="http://h.qiqianke.com/data/cache_classify.js" type='text/javascript' charset="utf-8"></script>
+<script type="text/javascript"> 
+$(document).ready(function()
+{
+	jobslist();
+	jobscontrast("jobs-contrast.php.htm"/*tpa=http://h.qiqianke.com/jobs/jobs-contrast.php*/);
+	apply_jobs("/");
+	favorites("/");
+	recommend_jobs("/");
+});
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1e25c4bd01650b2dcd316c0489047eb7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+
+<div align="center">
+<script type="text/javascript">
+    /*960*90 鍒涘缓浜?2014-08-05*/
+    var cpro_id = "u1645416";
+</script>
+<script src="c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+
+<div class="head_top">
+
+	<div class="head_top_box">
+
+			<div class="head_top_box_left link_lan"><span id="top_loginform"></span></div>
+
+			<div class="head_top_box_right link_bk">
+
+			
+<div class="lia t_so" id="t_so">
+
+搜索
+
+<div class="op_search" id="op_search"> 
+
+	<div class="stit" ><div>搜索</div></div>
+
+	<div class="sform">
+
+	<form action="" method="get" name="topsearch">
+
+	  <input name="key" type="text"  class="key"/>
+
+	  <div class="sutleft">
+
+	  <input type="button" value="搜职位" class="but70"  id="/jobs/jobs-list.php"/>
+
+	  </div>
+
+	  <div class="sutright">
+
+	  <input type="button" value="搜简历" class="but70" id="/resume/resume-list.php"/>
+
+	   </div>	   
+
+	   <div class="clear"></div>
+
+	   </form>
+
+	</div>
+
+</div>
+
+</div>
+
+<a href="index-1.htm" tppabs="http://h.qiqianke.com/wap/"  class="lia t_m">手机频道</a>
+
+
+<a href="index.htm" tppabs="http://h.qiqianke.com/" class="lia">网站首页</a>
+
+<a href="javascript:if(confirm(%27http://h.qiqianke.com/plus/shortcut.php  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a path excluded by the site\%27s Robot Exclusion parameters.  (Teleport Ultra\%27s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/plus/shortcut.php%27" tppabs="http://h.qiqianke.com/plus/shortcut.php" style="color:#FF3300" class="lia">保存到桌面</a>
+
+<script type="text/javascript">
+
+//顶部部登录
+
+$.get("http://h.qiqianke.com/plus/ajax_user.php", {"act":"top_loginform"},
+
+function (data,textStatus)
+
+{			
+
+$("#top_loginform").html(data);
+
+}
+
+);
+
+//
+
+$("#t_so").hover(
+
+function(){
+
+$("#t_so").css("position","relative");
+
+$("#op_search").show();
+
+},
+
+function(){
+
+$("#op_search").hide();
+
+$("#t_so").css("position","");	
+
+}
+
+);
+
+$("form[name=topsearch] .but70").click(function(){
+
+$("form[name=topsearch]").attr("action",$(this).attr("id"));
+
+$("form[name=topsearch]").submit();
+
+});
+
+</script>
+			</div>
+
+			<div class="clear"></div>
+
+	</div>
+
+</div>
+
+<div class="head">
+
+	<div class="head_logo">
+
+		<a href="index.htm" tppabs="http://h.qiqianke.com/"><img src="logo.jpg" tppabs="http://h.qiqianke.com/data/images/logo.jpg" alt="乐清人才网" border="0" align="absmiddle" /></a>
+
+		
+	</div>
+
+	<div class="head_logo_right">
+
+			
+			
+	</div>
+
+	<div class="clear"></div>
+
+</div><div class="page_location link_bk">
+当前位置：<a href="index.htm" tppabs="http://h.qiqianke.com/">首页</a>&nbsp;>>&nbsp;<a href="index-2.htm" tppabs="http://h.qiqianke.com/jobs/">招聘信息</a>&nbsp;>>&nbsp;搜索结果
+</div>
+<div class="jobs-nav" id="typenav">
+  <a href="jobs-list.php.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php" class="select">全能搜索</a>
+  <a href="officebuilding-search.php.htm" tppabs="http://h.qiqianke.com/jobs/officebuilding-search.php" >按写字楼搜索</a>
+  <a href="street-search.php.htm" tppabs="http://h.qiqianke.com/jobs/street-search.php">按道路搜索</a>
+  <a href="jobtag-search.php.htm" tppabs="http://h.qiqianke.com/jobs/jobtag-search.php" >按标签搜索</a>
+  <div class="clear"></div>
+</div>
+<div class="jobsearchbox" id="jobsearchbox"><div class="loading"></div></div>
+<script src="jquery.jobs-search.js" tppabs="http://h.qiqianke.com/templates/default/js/jquery.jobs-search.js" type='text/javascript'></script>
+<script type="text/javascript">
+	var getstr=",,,,7,,,,,";
+	var getkey="请输入职位名称、公司名称、技能特长、学校等关键字...";
+	allaround('/templates/default/','/','jobs-list.php.htm'/*tpa=http://h.qiqianke.com/jobs/jobs-list.php*/,getkey,getstr);
+</script>
+<div class="jobs_list_tip link_greenu" id="jobs_list_tip">
+<ul>
+<li>提醒：凡需先交纳押金、保证金、体检费、材料费、成本费等费用或到指定医院体检等，可能是骗子信息，谨防上当受骗。</li>
+<li>提醒：您知道吗？公司招聘时都会搜索简历库，<a href="javascript:if(confirm(%27http://h.qiqianke.com/user/personal/personal_resume.php?act=resume_list  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a path excluded by the site\%27s Robot Exclusion parameters.  (Teleport Ultra\%27s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/user/personal/personal_resume.php?act=resume_list%27" tppabs="http://h.qiqianke.com/user/personal/personal_resume.php?act=resume_list" target="_blank">免费发布简历</a>，获取更多机会！</li>
+</ul>
+</div>
+<!--职位列表 -->
+<div class="jobs_list">
+  <form action="" method="post"  name="formjobslist" id="formjobslist"  target="_blank">
+    <div class="tit">
+	 			<label><input name="selectall" type="checkbox" value="" id="selectall"/>&nbsp;全选</label>
+	  			<div class="titsub deliver" >投递简历</div>
+				<div class="titsub collect" >收藏职位</div>
+				<div class="titsub contrast" >对比职位</div> 
+				<div class="pageminnav link_lan"><span>1/0页</span><a class=""><</a><a class="">下一页</a><div class="clear"></div></div>
+	 			<div class="clear"></div>
+	</div>	
+	<div class="sort">
+		  <div class="txt link_bk">
+		  <span>排序：</span>
+		  		  <a href="jobs-list.php-sort=stickrtime&settr=7&key=&page=1.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?sort=stickrtime&settr=7&key=&page=1" >默认</a>
+		  <a href="jobs-list.php-sort=rtime&settr=7&key=&page=1.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?sort=rtime&settr=7&key=&page=1" >更新时间</a>
+		  <a href="jobs-list.php-sort=hot&settr=7&key=&page=1.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?sort=hot&settr=7&key=&page=1" >热度</a>
+		  <a href="jobs-list.php-sort=wage&settr=7&key=&page=1.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?sort=wage&settr=7&key=&page=1" >工资</a>
+		  <a href="jobs-list.php-sort=scale&settr=7&key=&page=1.htm" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1" class="select">公司规模</a>
+		  		  <div class="pagerow"><span>每页显示：</span>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1&inforow=10  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1&inforow=10%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1&inforow=10"  class="select">10</a>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1&inforow=20  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1&inforow=20%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1&inforow=20" >20</a>
+		  <a href="javascript:if(confirm(%27http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1&inforow=30  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1&inforow=30%27" tppabs="http://h.qiqianke.com/jobs/jobs-list.php?sort=scale&settr=7&key=&page=1&inforow=30" >30</a>
+		  </div>
+		  </div>
+	</div>
+		<div class="noinfo">
+		<span>抱歉，没有符合此条件的信息。</span><br />
+您可以：<br />
+重新修改搜索条件后再进行搜索。 <br />
+适当减少一些搜索条件，以便能够获得更多的结果。 <br />
+		</div>
+		    <div class="tit" style="border-top:0px;">
+	 <label> <input name="selectall" type="checkbox" value="" id="selectall"/>&nbsp;全选</label>
+	  			<div class="titsub deliver">投递简历</div>
+				  <div class="titsub collect">收藏职位</div>
+				  <div class="titsub contrast">对比职位</div>
+	  <div class="clear"></div>
+	</div>
+  </form> 
+</div>
+
+<table width="" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>		<div class="page link_bk">
+		<a class="">首页</a><a class="">上一页</a><a class="">下一页</a><a class="">尾页</a><a>1/0页</a><div class="clear"></div>
+		</div>
+		</td>
+  </tr>
+</table>
+
+<div class="footer">
+
+<div class="link_bk">
+
+</div>
+
+<div class="link_bk">
+
+联系地址：浙江省乐清市虹桥镇时代广场A幢8楼C座 联系电话：13968865327 网站备案：浙ICP备09054958号-1  <script type="text/javascript" src="stats-sId=13596324.js" tppabs="http://tajs.qq.com/stats?sId=13596324" charset="UTF-8"></script></div>
+
+<div class="link_bk">乐清市柳城数码科技有限公司旗下七千客工作室&nbsp;&nbsp;&nbsp;<a href="tencent://message/?uin=260839291">QQ:260839291</a>&nbsp;&nbsp;&nbsp;<a href="mailto:qiqianke@qiqianke.com">邮箱：qiqianke@qiqianke.com</a>&nbsp;&nbsp;&nbsp;<a href="javascript:if(confirm(%27http://www.qiqianke.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.qiqianke.com/%27" tppabs="http://www.qiqianke.com/">乐清人才网</a></div>
+
+<div class="link_bk"><a target="_blank" href="javascript:if(confirm(%27http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo%27" tppabs="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=F3tiZXJ-Ynp2eVdmZjl0eHo" style="text-decoration:none;"><img src="ico_mailme_12.png" tppabs="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_12.png"/></a></div>
+
+</div>
+
+<div align="center">
+<script type="text/javascript">
+    /*960*90 鍒涘缓浜?2014-08-05*/
+    var cpro_id = "u1645416";
+</script>
+<script src="c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4007882890225227";
+/* 728-90 */
+google_ad_slot = "2485876799";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="show_ads.js" tppabs="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+
+
+
+         <div style="display:none">
+           <a href="http://www.liucity.com/" >少儿编程</a>
+                      <a href="http://www.qiqianke.com/" >七千客少儿编程</a>
+                                 <a href="http://www.xuezaixin.cn/" >雁荡少儿编程</a>
+                                            <a href="http://www.xuezaixin.com/" >雁荡镇少儿编程</a>
+                                                       <a href="http://www.fafapopo.com/" >雁荡小镇少儿编程</a>
+                                                                  <a href="http://www.hqfafa.com/" >悦林庄园少儿编程</a>
+                                                                             <a href="http://www.hppopo.com/" >乐清市少儿编程</a>
+                                                                                        <a href="http://www.menxia.net/" >乐清少儿编程</a>                                                                                             <a href="http://h.qiqianke.com/" >乐清人才网</a>
+       <a href="http://w.liucity.com/" >乐清市柳城数码科技有限公司</a>     
+           </div></body>
+</html>
